@@ -2,36 +2,95 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Product Landing Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<header id="header"> <!-- 1 -->
-		<img src="" id="header-img">	<!-- 2 -->
+		
+		<section class="logo">
+		<img src="https://www.freeiconspng.com/thumbs/coffee-icon-png/coffee-icon-png-29.png" id="header-img">	<!-- 2 -->
+		<h4 id="logo-name">Cafe Blue</h4>
+		</section>
+
 		<nav id="nav-bar">			<!-- 3 -->	
-			<a href="" class="nav-link"></a>	
-			<a href="" class="nav-link"></a>
-			<a href="" class="nav-link"></a>	<!-- 4 -->
+			<a href="#home" class="nav-link">Home</a>	
+			<a href="#Product" class="nav-link">Product</a>
+			<a href="#Menu" class="nav-link">Offers</a>	<!-- 4 -->
 		</nav>	
 	</header>
 
 	<main>
-		<section>
-			<video id="video" width="320" height="240" controls>
-  				<source src="movie.mp4" type="video/mp4">
-  				Your browser does not support the video tag.
-			</video>	<!-- 6 -->
+		<section id="home">
+			<h3>Adding Moments of Perfect Sip.</h3>
+			<section id="slideshow">
+				<img src="https://c4.wallpaperflare.com/wallpaper/258/801/308/coffee-4k-computer-hd-download-wallpaper-preview.jpg">
+				<img src="https://images.pexels.com/videos/3135924/free-video-3135924.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+				<img src="https://thumbs.dreamstime.com/b/barista-cafe-man-working-coffee-shop-barista-cafe-portrait-young-man-working-coffee-shop-coffee-machine-high-118052417.jpg">
+			</section>
+			
 		</section>
-		<section>
+		
+		<section id="Product">
+			<h3>Excellence taste in Coffee</h3>
+			<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Tdwetb0Mvyc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+  			Your browser does not support the video tag.</iframe>
+				<!-- 6 -->
 			<form id="form" action="https://www.freecodecamp.com/email-submit">	<!-- 7, 12 -->
 				<input type="email"	id="email" name="email"
-				placeholder="Enter your email"><!-- 8,9,10 -->
-				<input type="submit" id="submit" value="submit">	<!-- 11 -->
+				placeholder="Enter your email" required /><!-- 8,9,10 -->
+				<input type="submit" id="submit" value="Get Started">	<!-- 11 -->
 			</form>
+			
+
 		</section>
+
+		<section id="Menu">
+			<h3>Today's Offer</h3>
+
+			<main id="offer">
+			
+			  <div class="product" id="tenor">
+        <div class="level">Single Offer</div>
+        <h2>Rs 99</h2>
+        <ol>
+          <li>Small Coffee</li>
+          <li>Potato Chips</li>
+          <li>Choco Cookie</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+
+      <div class="product" id="bass">
+        <div class="level">Couple Offer</div>
+        <h2>Rs 199</h2>
+        <ol>
+          <li>Two Medium Coffee</li>
+          <li>Cheese Fries</li>
+          <li>Two Cookies</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+      
+      <div class="product" id="valve">
+        <div class="level">Family Offer</div>
+        <h2>Rs 399</h2>
+        <ol>
+          <li>Four Large Coffee</li>
+          <li>Four burger</li>
+          <li>Four cookies</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+      
+      		</main>
+		</section>
+		
 	</main>
 	
 	<footer>
-		
+		<h4>© Cafe Blue. All rights reserved.</h4>
 	</footer>
 </body>
 </html>
